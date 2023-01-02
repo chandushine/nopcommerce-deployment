@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage ('clone') {
             steps {
-                git clone: 'https://github.com/chandushine/nopcommerce-deployment.git',
-                branch: 'master'
+                git clone: "https://github.com/chandushine/nopcommerce-deployment.git",
+                branch: "master"
             }
         }
         stage ('build') {
