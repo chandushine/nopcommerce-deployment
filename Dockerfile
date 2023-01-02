@@ -1,4 +1,4 @@
-M ubuntu:22.04 as build
+FROM ubuntu:22.04 as build
 LABEL author="chandu"
 RUN mkdir /Nop
 RUN apt update && \
