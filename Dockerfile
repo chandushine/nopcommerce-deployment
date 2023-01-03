@@ -11,5 +11,5 @@ RUN apt update && \
 		    COPY  --from=build /Nop /Nop
 		    WORKDIR /Nop
 		    EXPOSE 80
-		    CMD ["dotnet","/Nop/Nop.Web.dll"]
+		    CMD ["dotnet","/Nop/Nop.Web.dll","run","--server.urls=http://0.0.0.0:*"]
 
